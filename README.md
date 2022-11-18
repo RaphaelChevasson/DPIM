@@ -29,6 +29,6 @@ Feel free to contact us by raising a github issue!
 
 Our work is based upon:
 - [EWISER](https://github.com/SapienzaNLP/ewiser) ([CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)) for the synonym extraction,
-- POINTER ([MIT](https://opensource.org/licenses/MIT)) for the controlable generation,
+- [POINTER](https://github.com/dreasysnail/POINTER) ([MIT](https://opensource.org/licenses/MIT)) for the controlable generation,
 - [ProtAugment](https://github.com/tdopierre/ProtAugment) ([Apache v2](https://www.apache.org/licenses/LICENSE-2.0)) for fine-grained few-shot classification, to evaluate on the data augmentation task.
 Kudo to them!
