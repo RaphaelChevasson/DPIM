@@ -18,7 +18,8 @@ You can link to this repo or/and cite our paper:
   journal={ArXiv},
   year={2022},
   volume={COMMING SOON}
-}```
+}
+```
 
 # Inquiries
 
