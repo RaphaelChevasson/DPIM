@@ -4,7 +4,7 @@ This repository host [code](./code), [samples and metrics](./results) for the [p
 
 # License
 
-Our code is licensed under dual [MIT](https://opensource.org/licenses/MIT) and [Apache v2](https://www.apache.org/licenses/LICENSE-2.0) licenses, at your choice. Some submodules may have more restrictive licenses, see the next section.
+Our code is licensed under dual [MIT](https://opensource.org/licenses/MIT) and [Apache v2](https://www.apache.org/licenses/LICENSE-2.0) licenses, at your choice. Some submodules may have more restrictive licenses, see the `Aknowledgments` section.
 
 # References
 
