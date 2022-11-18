@@ -1,6 +1,6 @@
 # DPIM
 
-This repository host [code](../tree/main/code), [samples and metrics](../tree/main/results) for the [paper]() `Diverse Paraphrasing with Insertion Models for Few-Shot Intent Detection`. It proposes a pipeline for automatic and controllable paraphrase generation.
+This repository host [code](./code), [samples and metrics](./results) for the [paper]() `Diverse Paraphrasing with Insertion Models for Few-Shot Intent Detection`. It proposes a pipeline for automatic and controllable paraphrase generation.
 
 Clic any of these links for more details.
 
