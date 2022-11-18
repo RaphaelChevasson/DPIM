@@ -2,11 +2,9 @@
 
 This repository host [code](./code), [samples and metrics](./results) for the [paper]() `Diverse Paraphrasing with Insertion Models for Few-Shot Intent Detection`. It proposes a pipeline for automatic and controllable paraphrase generation.
 
-Clic any of these links for more details.
-
 # License
 
-Our code is dual licensed under dual [MIT](https://opensource.org/licenses/MIT) and [Apache v2](https://www.apache.org/licenses/LICENSE-2.0) licenses, at your choice. Some submodules may have more restrictive licenses, see the next section.
+Our code is licensed under dual [MIT](https://opensource.org/licenses/MIT) and [Apache v2](https://www.apache.org/licenses/LICENSE-2.0) licenses, at your choice. Some submodules may have more restrictive licenses, see the next section.
 
 # References
 
@@ -23,7 +21,7 @@ You can link to this repo or/and cite our paper:
 
 # Inquiries
 
-Feel free to contact us by raising a github issue!
+Feel free to contact us via github [issues](./issues) or private message.
 
 # Aknowledgments
 
