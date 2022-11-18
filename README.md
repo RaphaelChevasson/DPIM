@@ -21,7 +21,7 @@ You can link to this repo or/and cite our paper:
 
 # Inquiries
 
-Feel free to contact us via github [issues](./issues) or private message.
+Feel free to contact us via github [issues](../../issues) or private message.
 
 # Aknowledgments
 
