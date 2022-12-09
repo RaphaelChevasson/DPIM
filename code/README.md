@@ -2,6 +2,8 @@
 
 Coming soon! Code is being cleaned and tested against fresh windows and linux right now.
 
+`/!\` Sorry for the delay, we got hit pretty hard by CODIV. Still comming soon `/!\`
+
 # Computational requirements
 
 There are 4 steps with a significant runtime:
