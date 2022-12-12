@@ -70,7 +70,7 @@ Memory-wise, all steps have been found to fit on a consumer-grade 8Go Nvidia gtx
 
 ```sh
 cd code/paraphrase
-source ./venv-paraphrase/bin/activate
+source ../ewiser/venv-ewiser/bin/activate
 
 dataset=BANKING77
 xp_dir=xps/001-$dataset/
@@ -84,7 +84,7 @@ python augmentation_pipeline.py True True True  # 3 booleans describing which pa
     --limit_dataset 0  # do we truncate the dataset for a faster, less acurate run
                        #  0: do not truncate ; 1000: keep only 1000 source sentences
     --p_synonyms 0.75 --p_shuffles 0.25  # keyword augmentation probabilities
-    --pointer_model ../POINTER/ckpt/my_model/checkpoint-20000 # expension model to use
+    --pointer_model ../POINTER/ckpt/assistant_model  # expension model to use
     --n_outputs 5  # number of paraphrases per sentence
     --regimes full --K 1 --CV 1  # ProtAugment evaluation parametters
     --log_path $xp_dir --tmp_path $xp_dir/tmp --out_path $xp_dir  # output directories
@@ -92,8 +92,8 @@ python augmentation_pipeline.py True True True  # 3 booleans describing which pa
 
 Alternatively, you can use your own source sentences by:
  - entering any name in place of `$dataset`
- - setting --in_file to your text file containing one sample per line
- - setting do_protaugment to False (if you want to evaluate with ProtAugment, you can set it to True but you will need to provide your labels and samples in a similar form to the 4 existing datasets.)
+ - setting `--in_file` to your text file containing one sample per line
+ - setting `do_protaugment` to `False` (if you want to evaluate with ProtAugment, you can set it to `True` but you will need to provide your labels and samples in a similar form to the 4 existing datasets.)
 for example:
 ```sh
 xp_dir=xps/002-custom_samples/
@@ -101,7 +101,7 @@ mkdir $xp_dir
 python augmentation_pipeline.py True True False  # do_paraphrase, do_pointer, do_protaugment
     custom_samples --in_file my_samples.txt  # use custom source sentences
     --p_synonyms 0.75 --p_shuffles 0.25  # keyword augmentation probabilities
-    --pointer_model ../POINTER/ckpt/my_model/checkpoint-20000 # expension model to use
+    --pointer_model ../POINTER/ckpt/assistant_model  # expension model to use
     --n_outputs 5  # number of paraphrases per sentence
     --log_path $xp_dir --tmp_path $xp_dir/tmp --out_path $xp_dir  # output directories
 ```
@@ -134,4 +134,6 @@ model_out=./ckpt/my_model
 python -m torch.distributed.launch  --nproc_per_node $num_gpus training.py --pregenerated_data $dataset_out --bert_model $model_in --output_dir $model_out --epochs 40 --train_batch_size 16 --output_step 20000 --learning_rate 1e-5
 ```
 
-See POINTER repo's [documentation](https://github.com/dreasysnail/POINTER) for more details on fine-tuning POINTER or training it from scratch.
+We recommand adjusting `--train_batch_size` to the max that don't get you a cuda (GPU) out of memory error.  
+With big datasets, you might want to add `--reduce_memory` to load training data as on-disc memmaps if you get a non-cuda (CPU) out of memory error.  
+See POINTER repo's [documentation](https://github.com/dreasysnail/POINTER) for more details on fine-tuning POINTER or training it from scratch.  
