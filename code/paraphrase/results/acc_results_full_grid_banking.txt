@@ -1,0 +1,44 @@
+
+
+
+===== xps =====
+['{801..825}']: grid search 5x5 BANKING77
+
+
+
+===== BANKING77 =====
+
+
+=== grid search ===
+results/compile_accs.py xps/{xp}*/protaugment-cv*-k1-low/metrics.json -i
+
+--- valid, test, n_xps, xps ---
+0.864±0.026 0.857±0.016 5 xps/801_aug_BANKING77-limit0_1syn-1shuf_ckpt-BANKING77.checkpoint-65536/protaugment-k1-low/metrics.json
+0.865±0.025 0.858±0.007 5 xps/802_aug_BANKING77-limit0_1syn-0.75shuf_ckpt-BANKING77.checkpoint-65536/protaugment-k1-low/metrics.json
+0.863±0.024 0.857±0.016 5 xps/803_aug_BANKING77-limit0_1syn-0.5shuf_ckpt-BANKING77.checkpoint-65536/protaugment-k1-low/metrics.json
+0.860±0.025 0.860±0.010 5 xps/804_aug_BANKING77-limit0_1syn-0.25shuf_ckpt-BANKING77.checkpoint-65536/protaugment-k1-low/metrics.json
+0.862±0.024 0.862±0.013 5 xps/805_aug_BANKING77-limit0_1syn-0shuf_ckpt-BANKING77.checkpoint-65536/protaugment-k1-low/metrics.json
+0.866±0.024 0.860±0.016 5 xps/806_aug_BANKING77-limit0_0.75syn-1shuf_ckpt-BANKING77.checkpoint-65536/protaugment-k1-low/metrics.json
+0.865±0.022 0.860±0.010 5 xps/807_aug_BANKING77-limit0_0.75syn-0.75shuf_ckpt-BANKING77.checkpoint-65536/protaugment-k1-low/metrics.json
+0.863±0.024 0.866±0.014 5 xps/808_aug_BANKING77-limit0_0.75syn-0.5shuf_ckpt-BANKING77.checkpoint-65536/protaugment-k1-low/metrics.json
+0.861±0.023 0.862±0.012 5 xps/809_aug_BANKING77-limit0_0.75syn-0.25shuf_ckpt-BANKING77.checkpoint-65536/protaugment-k1-low/metrics.json
+0.867±0.023 0.867±0.012 5 xps/810_aug_BANKING77-limit0_0.75syn-0shuf_ckpt-BANKING77.checkpoint-65536/protaugment-k1-low/metrics.json
+0.865±0.023 0.860±0.015 5 xps/811_aug_BANKING77-limit0_0.5syn-1shuf_ckpt-BANKING77.checkpoint-65536/protaugment-k1-low/metrics.json
+0.863±0.025 0.859±0.011 5 xps/812_aug_BANKING77-limit0_0.5syn-0.75shuf_ckpt-BANKING77.checkpoint-65536/protaugment-k1-low/metrics.json
+0.865±0.027 0.865±0.010 5 xps/813_aug_BANKING77-limit0_0.5syn-0.5shuf_ckpt-BANKING77.checkpoint-65536/protaugment-k1-low/metrics.json
+0.867±0.028 0.861±0.012 5 xps/814_aug_BANKING77-limit0_0.5syn-0.25shuf_ckpt-BANKING77.checkpoint-65536/protaugment-k1-low/metrics.json
+0.868±0.023 0.862±0.009 5 xps/815_aug_BANKING77-limit0_0.5syn-0shuf_ckpt-BANKING77.checkpoint-65536/protaugment-k1-low/metrics.json
+0.864±0.024 0.860±0.011 5 xps/816_aug_BANKING77-limit0_0.25syn-1shuf_ckpt-BANKING77.checkpoint-65536/protaugment-k1-low/metrics.json
+0.861±0.027 0.864±0.015 5 xps/817_aug_BANKING77-limit0_0.25syn-0.75shuf_ckpt-BANKING77.checkpoint-65536/protaugment-k1-low/metrics.json
+0.861±0.023 0.854±0.008 5 xps/818_aug_BANKING77-limit0_0.25syn-0.5shuf_ckpt-BANKING77.checkpoint-65536/protaugment-k1-low/metrics.json
+0.867±0.025 0.864±0.012 5 xps/819_aug_BANKING77-limit0_0.25syn-0.25shuf_ckpt-BANKING77.checkpoint-65536/protaugment-k1-low/metrics.json
+0.865±0.020 0.863±0.008 5 xps/820_aug_BANKING77-limit0_0.25syn-0shuf_ckpt-BANKING77.checkpoint-65536/protaugment-k1-low/metrics.json
+0.864±0.027 0.860±0.008 5 xps/821_aug_BANKING77-limit0_0syn-1shuf_ckpt-BANKING77.checkpoint-65536/protaugment-k1-low/metrics.json
+0.863±0.025 0.859±0.008 5 xps/822_aug_BANKING77-limit0_0syn-0.75shuf_ckpt-BANKING77.checkpoint-65536/protaugment-k1-low/metrics.json
+0.868±0.028 0.865±0.009 5 xps/823_aug_BANKING77-limit0_0syn-0.5shuf_ckpt-BANKING77.checkpoint-65536/protaugment-k1-low/metrics.json
+0.865±0.026 0.866±0.011 5 xps/824_aug_BANKING77-limit0_0syn-0.25shuf_ckpt-BANKING77.checkpoint-65536/protaugment-k1-low/metrics.json
+0.867±0.026 0.869±0.012 5 xps/825_aug_BANKING77-limit0_0syn-0shuf_ckpt-BANKING77.checkpoint-65536/protaugment-k1-low/metrics.json
+--- best test acc ---
+0.867±0.026 0.869±0.012 5 xps/825_aug_BANKING77-limit0_0syn-0shuf_ckpt-BANKING77.checkpoint-65536/protaugment-k1-low/metrics.json
+--- best valid acc ---
+0.868±0.023 0.862±0.009 5 xps/815_aug_BANKING77-limit0_0.5syn-0shuf_ckpt-BANKING77.checkpoint-65536/protaugment-k1-low/metrics.json

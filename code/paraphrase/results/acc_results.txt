@@ -1,0 +1,431 @@
+
+
+
+===== xps =====
+['{044..068}']: grid search 5x5 BANKING77[:1000]
+['{147..171}']: grid search 5x5 HWU64[:1000]
+['{172..196}']: grid search 5x5 Liu[:1000]
+['{197..221}']: grid search 5x5 OOS[:1000]
+
+
+
+===== BANKING77[:1000] =====
+
+
+=== grid search ===
+python results/compile_accs.py xps/{044..068}*/protaugment-cv*-k1-low/metrics.json -i --verbose 0
+
+--- valid, test, n_xps, xps ---
+0.851±0.023 0.845±0.009 5 xps/044_aug_BANKING77-limit1000_1.0syn-1.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.849±0.023 0.847±0.005 5 xps/045_aug_BANKING77-limit1000_1.0syn-0.75shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.850±0.024 0.849±0.009 5 xps/046_aug_BANKING77-limit1000_1.0syn-0.5shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.847±0.019 0.842±0.014 5 xps/047_aug_BANKING77-limit1000_1.0syn-0.25shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.848±0.024 0.847±0.008 5 xps/048_aug_BANKING77-limit1000_1.0syn-0.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.854±0.024 0.851±0.012 5 xps/049_aug_BANKING77-limit1000_0.75syn-1.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.856±0.025 0.847±0.010 5 xps/050_aug_BANKING77-limit1000_0.75syn-0.75shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.854±0.022 0.853±0.008 5 xps/051_aug_BANKING77-limit1000_0.75syn-0.5shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.850±0.023 0.852±0.010 5 xps/052_aug_BANKING77-limit1000_0.75syn-0.25shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.857±0.022 0.852±0.009 5 xps/053_aug_BANKING77-limit1000_0.75syn-0.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.851±0.029 0.849±0.011 5 xps/054_aug_BANKING77-limit1000_0.5syn-1.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.852±0.024 0.852±0.011 5 xps/055_aug_BANKING77-limit1000_0.5syn-0.75shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.851±0.023 0.850±0.008 5 xps/056_aug_BANKING77-limit1000_0.5syn-0.5shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.859±0.024 0.856±0.010 5 xps/057_aug_BANKING77-limit1000_0.5syn-0.25shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.853±0.024 0.851±0.011 5 xps/058_aug_BANKING77-limit1000_0.5syn-0.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.852±0.026 0.852±0.009 5 xps/059_aug_BANKING77-limit1000_0.25syn-1.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.850±0.028 0.851±0.011 5 xps/060_aug_BANKING77-limit1000_0.25syn-0.75shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.853±0.022 0.850±0.013 5 xps/061_aug_BANKING77-limit1000_0.25syn-0.5shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.852±0.023 0.848±0.009 5 xps/062_aug_BANKING77-limit1000_0.25syn-0.25shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.852±0.026 0.848±0.007 5 xps/063_aug_BANKING77-limit1000_0.25syn-0.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.848±0.026 0.847±0.010 5 xps/064_aug_BANKING77-limit1000_0.0syn-1.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.849±0.026 0.854±0.010 5 xps/065_aug_BANKING77-limit1000_0.0syn-0.75shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.849±0.026 0.849±0.013 5 xps/066_aug_BANKING77-limit1000_0.0syn-0.5shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.845±0.027 0.844±0.015 5 xps/067_aug_BANKING77-limit1000_0.0syn-0.25shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.848±0.028 0.849±0.014 5 xps/068_aug_BANKING77-limit1000_0.0syn-0.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+--- best test acc ---
+0.859±0.024 0.856±0.010 5 xps/057_aug_BANKING77-limit1000_0.5syn-0.25shuf_ckpt-65536/protaugment-k1-low/metrics.json
+--- best valid acc ---
+0.859±0.024 0.856±0.010 5 xps/057_aug_BANKING77-limit1000_0.5syn-0.25shuf_ckpt-65536/protaugment-k1-low/metrics.json
+
+
+
+===== HWU64[:1000] =====
+
+
+=== grid search ===
+python results/compile_accs.py xps/{147..171}*/protaugment-cv*-k1-low/metrics.json -i --verbose 0
+
+--- valid, test, n_xps, xps ---
+0.782±0.026 0.818±0.014 5 xps/147_aug_HWU64-limit1000_1.0syn-1.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.784±0.024 0.809±0.019 5 xps/148_aug_HWU64-limit1000_1.0syn-0.75shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.782±0.030 0.816±0.016 5 xps/149_aug_HWU64-limit1000_1.0syn-0.5shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.781±0.034 0.824±0.016 5 xps/150_aug_HWU64-limit1000_1.0syn-0.25shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.784±0.038 0.810±0.015 5 xps/151_aug_HWU64-limit1000_1.0syn-0.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.782±0.034 0.821±0.014 5 xps/152_aug_HWU64-limit1000_0.75syn-1.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.783±0.035 0.815±0.018 5 xps/153_aug_HWU64-limit1000_0.75syn-0.75shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.781±0.030 0.818±0.011 5 xps/154_aug_HWU64-limit1000_0.75syn-0.5shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.784±0.037 0.813±0.017 5 xps/155_aug_HWU64-limit1000_0.75syn-0.25shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.785±0.037 0.806±0.012 5 xps/156_aug_HWU64-limit1000_0.75syn-0.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.781±0.037 0.818±0.008 5 xps/157_aug_HWU64-limit1000_0.5syn-1.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.779±0.036 0.803±0.014 5 xps/158_aug_HWU64-limit1000_0.5syn-0.75shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.784±0.033 0.819±0.013 5 xps/159_aug_HWU64-limit1000_0.5syn-0.5shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.785±0.032 0.819±0.018 5 xps/160_aug_HWU64-limit1000_0.5syn-0.25shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.785±0.034 0.813±0.014 5 xps/161_aug_HWU64-limit1000_0.5syn-0.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.772±0.036 0.810±0.024 5 xps/162_aug_HWU64-limit1000_0.25syn-1.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.781±0.033 0.805±0.017 5 xps/163_aug_HWU64-limit1000_0.25syn-0.75shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.779±0.033 0.808±0.016 5 xps/164_aug_HWU64-limit1000_0.25syn-0.5shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.780±0.029 0.809±0.018 5 xps/165_aug_HWU64-limit1000_0.25syn-0.25shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.778±0.033 0.813±0.019 5 xps/166_aug_HWU64-limit1000_0.25syn-0.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.771±0.037 0.803±0.015 5 xps/167_aug_HWU64-limit1000_0.0syn-1.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.783±0.037 0.808±0.014 5 xps/168_aug_HWU64-limit1000_0.0syn-0.75shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.781±0.031 0.808±0.019 5 xps/169_aug_HWU64-limit1000_0.0syn-0.5shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.781±0.031 0.807±0.016 5 xps/170_aug_HWU64-limit1000_0.0syn-0.25shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.785±0.032 0.816±0.021 5 xps/171_aug_HWU64-limit1000_0.0syn-0.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+--- best test acc ---
+0.781±0.034 0.824±0.016 5 xps/150_aug_HWU64-limit1000_1.0syn-0.25shuf_ckpt-65536/protaugment-k1-low/metrics.json
+--- best valid acc ---
+0.785±0.037 0.806±0.012 5 xps/156_aug_HWU64-limit1000_0.75syn-0.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+
+
+
+===== Liu[:1000] =====
+
+
+=== grid search ===
+python results/compile_accs.py xps/{172..196}*/protaugment-cv*-k1-low/metrics.json -i --verbose 0
+
+--- valid, test, n_xps, xps ---
+0.809±0.014 0.813±0.027 5 xps/172_aug_Liu-limit1000_1.0syn-1.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.811±0.018 0.809±0.029 5 xps/173_aug_Liu-limit1000_1.0syn-0.75shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.807±0.019 0.811±0.025 5 xps/174_aug_Liu-limit1000_1.0syn-0.5shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.805±0.021 0.812±0.019 5 xps/175_aug_Liu-limit1000_1.0syn-0.25shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.807±0.016 0.809±0.024 5 xps/176_aug_Liu-limit1000_1.0syn-0.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.810±0.019 0.808±0.027 5 xps/177_aug_Liu-limit1000_0.75syn-1.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.809±0.015 0.811±0.023 5 xps/178_aug_Liu-limit1000_0.75syn-0.75shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.804±0.017 0.815±0.022 5 xps/179_aug_Liu-limit1000_0.75syn-0.5shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.807±0.016 0.811±0.032 5 xps/180_aug_Liu-limit1000_0.75syn-0.25shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.808±0.021 0.806±0.019 5 xps/181_aug_Liu-limit1000_0.75syn-0.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.808±0.016 0.813±0.025 5 xps/182_aug_Liu-limit1000_0.5syn-1.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.809±0.016 0.810±0.023 5 xps/183_aug_Liu-limit1000_0.5syn-0.75shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.810±0.019 0.813±0.018 5 xps/184_aug_Liu-limit1000_0.5syn-0.5shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.807±0.017 0.811±0.020 5 xps/185_aug_Liu-limit1000_0.5syn-0.25shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.806±0.018 0.814±0.016 5 xps/186_aug_Liu-limit1000_0.5syn-0.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.805±0.013 0.812±0.024 5 xps/187_aug_Liu-limit1000_0.25syn-1.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.808±0.012 0.814±0.026 5 xps/188_aug_Liu-limit1000_0.25syn-0.75shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.809±0.016 0.812±0.023 5 xps/189_aug_Liu-limit1000_0.25syn-0.5shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.808±0.018 0.812±0.020 5 xps/190_aug_Liu-limit1000_0.25syn-0.25shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.802±0.015 0.807±0.023 5 xps/191_aug_Liu-limit1000_0.25syn-0.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.803±0.015 0.811±0.025 5 xps/192_aug_Liu-limit1000_0.0syn-1.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.804±0.016 0.809±0.025 5 xps/193_aug_Liu-limit1000_0.0syn-0.75shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.806±0.013 0.813±0.024 5 xps/194_aug_Liu-limit1000_0.0syn-0.5shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.802±0.018 0.805±0.020 5 xps/195_aug_Liu-limit1000_0.0syn-0.25shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.807±0.015 0.807±0.018 5 xps/196_aug_Liu-limit1000_0.0syn-0.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+--- best test acc ---
+0.804±0.017 0.815±0.022 5 xps/179_aug_Liu-limit1000_0.75syn-0.5shuf_ckpt-65536/protaugment-k1-low/metrics.json
+--- best valid acc ---
+0.811±0.018 0.809±0.029 5 xps/173_aug_Liu-limit1000_1.0syn-0.75shuf_ckpt-65536/protaugment-k1-low/metrics.json
+
+
+
+===== OOS[:1000] =====
+
+
+=== grid search ===
+python results/compile_accs.py xps/{197..221}*/protaugment-cv*-k1-low/metrics.json -i --verbose 0
+
+--- valid, test, n_xps, xps ---
+0.961±0.009 0.943±0.004 5 xps/197_aug_OOS-limit1000_1.0syn-1.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.959±0.008 0.945±0.002 5 xps/198_aug_OOS-limit1000_1.0syn-0.75shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.963±0.007 0.949±0.005 5 xps/199_aug_OOS-limit1000_1.0syn-0.5shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.961±0.004 0.946±0.007 5 xps/200_aug_OOS-limit1000_1.0syn-0.25shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.958±0.009 0.944±0.005 5 xps/201_aug_OOS-limit1000_1.0syn-0.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.957±0.007 0.943±0.002 5 xps/202_aug_OOS-limit1000_0.75syn-1.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.959±0.004 0.943±0.012 5 xps/203_aug_OOS-limit1000_0.75syn-0.75shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.961±0.005 0.944±0.003 5 xps/204_aug_OOS-limit1000_0.75syn-0.5shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.962±0.005 0.951±0.004 5 xps/205_aug_OOS-limit1000_0.75syn-0.25shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.962±0.005 0.946±0.002 5 xps/206_aug_OOS-limit1000_0.75syn-0.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.959±0.009 0.943±0.006 5 xps/207_aug_OOS-limit1000_0.5syn-1.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.956±0.008 0.940±0.003 5 xps/208_aug_OOS-limit1000_0.5syn-0.75shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.962±0.006 0.944±0.004 5 xps/209_aug_OOS-limit1000_0.5syn-0.5shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.960±0.008 0.946±0.004 5 xps/210_aug_OOS-limit1000_0.5syn-0.25shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.961±0.004 0.948±0.003 5 xps/211_aug_OOS-limit1000_0.5syn-0.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.961±0.005 0.944±0.005 5 xps/212_aug_OOS-limit1000_0.25syn-1.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.962±0.005 0.946±0.004 5 xps/213_aug_OOS-limit1000_0.25syn-0.75shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.962±0.005 0.943±0.003 5 xps/214_aug_OOS-limit1000_0.25syn-0.5shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.960±0.009 0.945±0.002 5 xps/215_aug_OOS-limit1000_0.25syn-0.25shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.960±0.007 0.944±0.006 5 xps/216_aug_OOS-limit1000_0.25syn-0.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.955±0.009 0.943±0.006 5 xps/217_aug_OOS-limit1000_0.0syn-1.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.958±0.009 0.943±0.006 5 xps/218_aug_OOS-limit1000_0.0syn-0.75shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.960±0.005 0.945±0.006 5 xps/219_aug_OOS-limit1000_0.0syn-0.5shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.960±0.007 0.946±0.002 5 xps/220_aug_OOS-limit1000_0.0syn-0.25shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.960±0.003 0.945±0.004 5 xps/221_aug_OOS-limit1000_0.0syn-0.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+--- best test acc ---
+0.962±0.005 0.951±0.004 5 xps/205_aug_OOS-limit1000_0.75syn-0.25shuf_ckpt-65536/protaugment-k1-low/metrics.json
+--- best valid acc ---
+0.963±0.007 0.949±0.005 5 xps/199_aug_OOS-limit1000_1.0syn-0.5shuf_ckpt-65536/protaugment-k1-low/metrics.json
+
+
+
+===== (BANKING77, HWU64)[:1000] =====
+
+
+=== grid search ===
+python results/compile_accs.py xps/{044..068}*/protaugment-cv*-k1-low/metrics.json xps/{147..171}*/protaugment-cv*-k1-low/metrics.json -i --verbose 0
+
+--- valid, test, n_xps, xps ---
+0.851±0.023 0.845±0.009 5 xps/044_aug_BANKING77-limit1000_1.0syn-1.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.849±0.023 0.847±0.005 5 xps/045_aug_BANKING77-limit1000_1.0syn-0.75shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.850±0.024 0.849±0.009 5 xps/046_aug_BANKING77-limit1000_1.0syn-0.5shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.847±0.019 0.842±0.014 5 xps/047_aug_BANKING77-limit1000_1.0syn-0.25shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.848±0.024 0.847±0.008 5 xps/048_aug_BANKING77-limit1000_1.0syn-0.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.854±0.024 0.851±0.012 5 xps/049_aug_BANKING77-limit1000_0.75syn-1.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.856±0.025 0.847±0.010 5 xps/050_aug_BANKING77-limit1000_0.75syn-0.75shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.854±0.022 0.853±0.008 5 xps/051_aug_BANKING77-limit1000_0.75syn-0.5shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.850±0.023 0.852±0.010 5 xps/052_aug_BANKING77-limit1000_0.75syn-0.25shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.857±0.022 0.852±0.009 5 xps/053_aug_BANKING77-limit1000_0.75syn-0.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.851±0.029 0.849±0.011 5 xps/054_aug_BANKING77-limit1000_0.5syn-1.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.852±0.024 0.852±0.011 5 xps/055_aug_BANKING77-limit1000_0.5syn-0.75shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.851±0.023 0.850±0.008 5 xps/056_aug_BANKING77-limit1000_0.5syn-0.5shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.859±0.024 0.856±0.010 5 xps/057_aug_BANKING77-limit1000_0.5syn-0.25shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.853±0.024 0.851±0.011 5 xps/058_aug_BANKING77-limit1000_0.5syn-0.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.852±0.026 0.852±0.009 5 xps/059_aug_BANKING77-limit1000_0.25syn-1.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.850±0.028 0.851±0.011 5 xps/060_aug_BANKING77-limit1000_0.25syn-0.75shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.853±0.022 0.850±0.013 5 xps/061_aug_BANKING77-limit1000_0.25syn-0.5shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.852±0.023 0.848±0.009 5 xps/062_aug_BANKING77-limit1000_0.25syn-0.25shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.852±0.026 0.848±0.007 5 xps/063_aug_BANKING77-limit1000_0.25syn-0.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.848±0.026 0.847±0.010 5 xps/064_aug_BANKING77-limit1000_0.0syn-1.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.849±0.026 0.854±0.010 5 xps/065_aug_BANKING77-limit1000_0.0syn-0.75shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.849±0.026 0.849±0.013 5 xps/066_aug_BANKING77-limit1000_0.0syn-0.5shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.845±0.027 0.844±0.015 5 xps/067_aug_BANKING77-limit1000_0.0syn-0.25shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.848±0.028 0.849±0.014 5 xps/068_aug_BANKING77-limit1000_0.0syn-0.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.782±0.026 0.818±0.014 5 xps/147_aug_HWU64-limit1000_1.0syn-1.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.784±0.024 0.809±0.019 5 xps/148_aug_HWU64-limit1000_1.0syn-0.75shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.782±0.030 0.816±0.016 5 xps/149_aug_HWU64-limit1000_1.0syn-0.5shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.781±0.034 0.824±0.016 5 xps/150_aug_HWU64-limit1000_1.0syn-0.25shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.784±0.038 0.810±0.015 5 xps/151_aug_HWU64-limit1000_1.0syn-0.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.782±0.034 0.821±0.014 5 xps/152_aug_HWU64-limit1000_0.75syn-1.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.783±0.035 0.815±0.018 5 xps/153_aug_HWU64-limit1000_0.75syn-0.75shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.781±0.030 0.818±0.011 5 xps/154_aug_HWU64-limit1000_0.75syn-0.5shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.784±0.037 0.813±0.017 5 xps/155_aug_HWU64-limit1000_0.75syn-0.25shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.785±0.037 0.806±0.012 5 xps/156_aug_HWU64-limit1000_0.75syn-0.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.781±0.037 0.818±0.008 5 xps/157_aug_HWU64-limit1000_0.5syn-1.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.779±0.036 0.803±0.014 5 xps/158_aug_HWU64-limit1000_0.5syn-0.75shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.784±0.033 0.819±0.013 5 xps/159_aug_HWU64-limit1000_0.5syn-0.5shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.785±0.032 0.819±0.018 5 xps/160_aug_HWU64-limit1000_0.5syn-0.25shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.785±0.034 0.813±0.014 5 xps/161_aug_HWU64-limit1000_0.5syn-0.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.772±0.036 0.810±0.024 5 xps/162_aug_HWU64-limit1000_0.25syn-1.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.781±0.033 0.805±0.017 5 xps/163_aug_HWU64-limit1000_0.25syn-0.75shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.779±0.033 0.808±0.016 5 xps/164_aug_HWU64-limit1000_0.25syn-0.5shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.780±0.029 0.809±0.018 5 xps/165_aug_HWU64-limit1000_0.25syn-0.25shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.778±0.033 0.813±0.019 5 xps/166_aug_HWU64-limit1000_0.25syn-0.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.771±0.037 0.803±0.015 5 xps/167_aug_HWU64-limit1000_0.0syn-1.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.783±0.037 0.808±0.014 5 xps/168_aug_HWU64-limit1000_0.0syn-0.75shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.781±0.031 0.808±0.019 5 xps/169_aug_HWU64-limit1000_0.0syn-0.5shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.781±0.031 0.807±0.016 5 xps/170_aug_HWU64-limit1000_0.0syn-0.25shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.785±0.032 0.816±0.021 5 xps/171_aug_HWU64-limit1000_0.0syn-0.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+--- best test acc ---
+0.859±0.024 0.856±0.010 5 xps/057_aug_BANKING77-limit1000_0.5syn-0.25shuf_ckpt-65536/protaugment-k1-low/metrics.json
+--- best valid acc ---
+0.859±0.024 0.856±0.010 5 xps/057_aug_BANKING77-limit1000_0.5syn-0.25shuf_ckpt-65536/protaugment-k1-low/metrics.json
+
+
+
+===== (BANKING77, HWU64, Liu)[:1000] =====
+
+
+=== grid search ===
+python results/compile_accs.py xps/{044..068}*/protaugment-cv*-k1-low/metrics.json xps/{147..196}*/protaugment-cv*-k1-low/metrics.json -i --verbose 0
+
+--- valid, test, n_xps, xps ---
+0.851±0.023 0.845±0.009 5 xps/044_aug_BANKING77-limit1000_1.0syn-1.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.849±0.023 0.847±0.005 5 xps/045_aug_BANKING77-limit1000_1.0syn-0.75shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.850±0.024 0.849±0.009 5 xps/046_aug_BANKING77-limit1000_1.0syn-0.5shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.847±0.019 0.842±0.014 5 xps/047_aug_BANKING77-limit1000_1.0syn-0.25shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.848±0.024 0.847±0.008 5 xps/048_aug_BANKING77-limit1000_1.0syn-0.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.854±0.024 0.851±0.012 5 xps/049_aug_BANKING77-limit1000_0.75syn-1.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.856±0.025 0.847±0.010 5 xps/050_aug_BANKING77-limit1000_0.75syn-0.75shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.854±0.022 0.853±0.008 5 xps/051_aug_BANKING77-limit1000_0.75syn-0.5shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.850±0.023 0.852±0.010 5 xps/052_aug_BANKING77-limit1000_0.75syn-0.25shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.857±0.022 0.852±0.009 5 xps/053_aug_BANKING77-limit1000_0.75syn-0.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.851±0.029 0.849±0.011 5 xps/054_aug_BANKING77-limit1000_0.5syn-1.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.852±0.024 0.852±0.011 5 xps/055_aug_BANKING77-limit1000_0.5syn-0.75shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.851±0.023 0.850±0.008 5 xps/056_aug_BANKING77-limit1000_0.5syn-0.5shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.859±0.024 0.856±0.010 5 xps/057_aug_BANKING77-limit1000_0.5syn-0.25shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.853±0.024 0.851±0.011 5 xps/058_aug_BANKING77-limit1000_0.5syn-0.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.852±0.026 0.852±0.009 5 xps/059_aug_BANKING77-limit1000_0.25syn-1.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.850±0.028 0.851±0.011 5 xps/060_aug_BANKING77-limit1000_0.25syn-0.75shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.853±0.022 0.850±0.013 5 xps/061_aug_BANKING77-limit1000_0.25syn-0.5shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.852±0.023 0.848±0.009 5 xps/062_aug_BANKING77-limit1000_0.25syn-0.25shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.852±0.026 0.848±0.007 5 xps/063_aug_BANKING77-limit1000_0.25syn-0.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.848±0.026 0.847±0.010 5 xps/064_aug_BANKING77-limit1000_0.0syn-1.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.849±0.026 0.854±0.010 5 xps/065_aug_BANKING77-limit1000_0.0syn-0.75shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.849±0.026 0.849±0.013 5 xps/066_aug_BANKING77-limit1000_0.0syn-0.5shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.845±0.027 0.844±0.015 5 xps/067_aug_BANKING77-limit1000_0.0syn-0.25shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.848±0.028 0.849±0.014 5 xps/068_aug_BANKING77-limit1000_0.0syn-0.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.782±0.026 0.818±0.014 5 xps/147_aug_HWU64-limit1000_1.0syn-1.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.784±0.024 0.809±0.019 5 xps/148_aug_HWU64-limit1000_1.0syn-0.75shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.782±0.030 0.816±0.016 5 xps/149_aug_HWU64-limit1000_1.0syn-0.5shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.781±0.034 0.824±0.016 5 xps/150_aug_HWU64-limit1000_1.0syn-0.25shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.784±0.038 0.810±0.015 5 xps/151_aug_HWU64-limit1000_1.0syn-0.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.782±0.034 0.821±0.014 5 xps/152_aug_HWU64-limit1000_0.75syn-1.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.783±0.035 0.815±0.018 5 xps/153_aug_HWU64-limit1000_0.75syn-0.75shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.781±0.030 0.818±0.011 5 xps/154_aug_HWU64-limit1000_0.75syn-0.5shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.784±0.037 0.813±0.017 5 xps/155_aug_HWU64-limit1000_0.75syn-0.25shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.785±0.037 0.806±0.012 5 xps/156_aug_HWU64-limit1000_0.75syn-0.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.781±0.037 0.818±0.008 5 xps/157_aug_HWU64-limit1000_0.5syn-1.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.779±0.036 0.803±0.014 5 xps/158_aug_HWU64-limit1000_0.5syn-0.75shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.784±0.033 0.819±0.013 5 xps/159_aug_HWU64-limit1000_0.5syn-0.5shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.785±0.032 0.819±0.018 5 xps/160_aug_HWU64-limit1000_0.5syn-0.25shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.785±0.034 0.813±0.014 5 xps/161_aug_HWU64-limit1000_0.5syn-0.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.772±0.036 0.810±0.024 5 xps/162_aug_HWU64-limit1000_0.25syn-1.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.781±0.033 0.805±0.017 5 xps/163_aug_HWU64-limit1000_0.25syn-0.75shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.779±0.033 0.808±0.016 5 xps/164_aug_HWU64-limit1000_0.25syn-0.5shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.780±0.029 0.809±0.018 5 xps/165_aug_HWU64-limit1000_0.25syn-0.25shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.778±0.033 0.813±0.019 5 xps/166_aug_HWU64-limit1000_0.25syn-0.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.771±0.037 0.803±0.015 5 xps/167_aug_HWU64-limit1000_0.0syn-1.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.783±0.037 0.808±0.014 5 xps/168_aug_HWU64-limit1000_0.0syn-0.75shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.781±0.031 0.808±0.019 5 xps/169_aug_HWU64-limit1000_0.0syn-0.5shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.781±0.031 0.807±0.016 5 xps/170_aug_HWU64-limit1000_0.0syn-0.25shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.785±0.032 0.816±0.021 5 xps/171_aug_HWU64-limit1000_0.0syn-0.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.809±0.014 0.813±0.027 5 xps/172_aug_Liu-limit1000_1.0syn-1.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.811±0.018 0.809±0.029 5 xps/173_aug_Liu-limit1000_1.0syn-0.75shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.807±0.019 0.811±0.025 5 xps/174_aug_Liu-limit1000_1.0syn-0.5shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.805±0.021 0.812±0.019 5 xps/175_aug_Liu-limit1000_1.0syn-0.25shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.807±0.016 0.809±0.024 5 xps/176_aug_Liu-limit1000_1.0syn-0.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.810±0.019 0.808±0.027 5 xps/177_aug_Liu-limit1000_0.75syn-1.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.809±0.015 0.811±0.023 5 xps/178_aug_Liu-limit1000_0.75syn-0.75shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.804±0.017 0.815±0.022 5 xps/179_aug_Liu-limit1000_0.75syn-0.5shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.807±0.016 0.811±0.032 5 xps/180_aug_Liu-limit1000_0.75syn-0.25shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.808±0.021 0.806±0.019 5 xps/181_aug_Liu-limit1000_0.75syn-0.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.808±0.016 0.813±0.025 5 xps/182_aug_Liu-limit1000_0.5syn-1.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.809±0.016 0.810±0.023 5 xps/183_aug_Liu-limit1000_0.5syn-0.75shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.810±0.019 0.813±0.018 5 xps/184_aug_Liu-limit1000_0.5syn-0.5shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.807±0.017 0.811±0.020 5 xps/185_aug_Liu-limit1000_0.5syn-0.25shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.806±0.018 0.814±0.016 5 xps/186_aug_Liu-limit1000_0.5syn-0.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.805±0.013 0.812±0.024 5 xps/187_aug_Liu-limit1000_0.25syn-1.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.808±0.012 0.814±0.026 5 xps/188_aug_Liu-limit1000_0.25syn-0.75shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.809±0.016 0.812±0.023 5 xps/189_aug_Liu-limit1000_0.25syn-0.5shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.808±0.018 0.812±0.020 5 xps/190_aug_Liu-limit1000_0.25syn-0.25shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.802±0.015 0.807±0.023 5 xps/191_aug_Liu-limit1000_0.25syn-0.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.803±0.015 0.811±0.025 5 xps/192_aug_Liu-limit1000_0.0syn-1.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.804±0.016 0.809±0.025 5 xps/193_aug_Liu-limit1000_0.0syn-0.75shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.806±0.013 0.813±0.024 5 xps/194_aug_Liu-limit1000_0.0syn-0.5shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.802±0.018 0.805±0.020 5 xps/195_aug_Liu-limit1000_0.0syn-0.25shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.807±0.015 0.807±0.018 5 xps/196_aug_Liu-limit1000_0.0syn-0.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+--- best test acc ---
+0.859±0.024 0.856±0.010 5 xps/057_aug_BANKING77-limit1000_0.5syn-0.25shuf_ckpt-65536/protaugment-k1-low/metrics.json
+--- best valid acc ---
+0.859±0.024 0.856±0.010 5 xps/057_aug_BANKING77-limit1000_0.5syn-0.25shuf_ckpt-65536/protaugment-k1-low/metrics.json
+
+
+
+===== (BANKING77, HWU64, Liu, OOS)[:1000] =====
+
+
+=== grid search ===
+python results/compile_accs.py xps/{044..068}*/protaugment-cv*-k1-low/metrics.json xps/{147..221}*/protaugment-cv*-k1-low/metrics.json -i --verbose 0
+
+--- valid, test, n_xps, xps ---
+0.851±0.023 0.845±0.009 5 xps/044_aug_BANKING77-limit1000_1.0syn-1.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.849±0.023 0.847±0.005 5 xps/045_aug_BANKING77-limit1000_1.0syn-0.75shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.850±0.024 0.849±0.009 5 xps/046_aug_BANKING77-limit1000_1.0syn-0.5shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.847±0.019 0.842±0.014 5 xps/047_aug_BANKING77-limit1000_1.0syn-0.25shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.848±0.024 0.847±0.008 5 xps/048_aug_BANKING77-limit1000_1.0syn-0.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.854±0.024 0.851±0.012 5 xps/049_aug_BANKING77-limit1000_0.75syn-1.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.856±0.025 0.847±0.010 5 xps/050_aug_BANKING77-limit1000_0.75syn-0.75shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.854±0.022 0.853±0.008 5 xps/051_aug_BANKING77-limit1000_0.75syn-0.5shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.850±0.023 0.852±0.010 5 xps/052_aug_BANKING77-limit1000_0.75syn-0.25shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.857±0.022 0.852±0.009 5 xps/053_aug_BANKING77-limit1000_0.75syn-0.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.851±0.029 0.849±0.011 5 xps/054_aug_BANKING77-limit1000_0.5syn-1.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.852±0.024 0.852±0.011 5 xps/055_aug_BANKING77-limit1000_0.5syn-0.75shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.851±0.023 0.850±0.008 5 xps/056_aug_BANKING77-limit1000_0.5syn-0.5shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.859±0.024 0.856±0.010 5 xps/057_aug_BANKING77-limit1000_0.5syn-0.25shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.853±0.024 0.851±0.011 5 xps/058_aug_BANKING77-limit1000_0.5syn-0.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.852±0.026 0.852±0.009 5 xps/059_aug_BANKING77-limit1000_0.25syn-1.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.850±0.028 0.851±0.011 5 xps/060_aug_BANKING77-limit1000_0.25syn-0.75shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.853±0.022 0.850±0.013 5 xps/061_aug_BANKING77-limit1000_0.25syn-0.5shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.852±0.023 0.848±0.009 5 xps/062_aug_BANKING77-limit1000_0.25syn-0.25shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.852±0.026 0.848±0.007 5 xps/063_aug_BANKING77-limit1000_0.25syn-0.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.848±0.026 0.847±0.010 5 xps/064_aug_BANKING77-limit1000_0.0syn-1.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.849±0.026 0.854±0.010 5 xps/065_aug_BANKING77-limit1000_0.0syn-0.75shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.849±0.026 0.849±0.013 5 xps/066_aug_BANKING77-limit1000_0.0syn-0.5shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.845±0.027 0.844±0.015 5 xps/067_aug_BANKING77-limit1000_0.0syn-0.25shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.848±0.028 0.849±0.014 5 xps/068_aug_BANKING77-limit1000_0.0syn-0.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.782±0.026 0.818±0.014 5 xps/147_aug_HWU64-limit1000_1.0syn-1.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.784±0.024 0.809±0.019 5 xps/148_aug_HWU64-limit1000_1.0syn-0.75shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.782±0.030 0.816±0.016 5 xps/149_aug_HWU64-limit1000_1.0syn-0.5shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.781±0.034 0.824±0.016 5 xps/150_aug_HWU64-limit1000_1.0syn-0.25shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.784±0.038 0.810±0.015 5 xps/151_aug_HWU64-limit1000_1.0syn-0.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.782±0.034 0.821±0.014 5 xps/152_aug_HWU64-limit1000_0.75syn-1.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.783±0.035 0.815±0.018 5 xps/153_aug_HWU64-limit1000_0.75syn-0.75shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.781±0.030 0.818±0.011 5 xps/154_aug_HWU64-limit1000_0.75syn-0.5shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.784±0.037 0.813±0.017 5 xps/155_aug_HWU64-limit1000_0.75syn-0.25shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.785±0.037 0.806±0.012 5 xps/156_aug_HWU64-limit1000_0.75syn-0.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.781±0.037 0.818±0.008 5 xps/157_aug_HWU64-limit1000_0.5syn-1.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.779±0.036 0.803±0.014 5 xps/158_aug_HWU64-limit1000_0.5syn-0.75shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.784±0.033 0.819±0.013 5 xps/159_aug_HWU64-limit1000_0.5syn-0.5shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.785±0.032 0.819±0.018 5 xps/160_aug_HWU64-limit1000_0.5syn-0.25shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.785±0.034 0.813±0.014 5 xps/161_aug_HWU64-limit1000_0.5syn-0.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.772±0.036 0.810±0.024 5 xps/162_aug_HWU64-limit1000_0.25syn-1.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.781±0.033 0.805±0.017 5 xps/163_aug_HWU64-limit1000_0.25syn-0.75shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.779±0.033 0.808±0.016 5 xps/164_aug_HWU64-limit1000_0.25syn-0.5shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.780±0.029 0.809±0.018 5 xps/165_aug_HWU64-limit1000_0.25syn-0.25shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.778±0.033 0.813±0.019 5 xps/166_aug_HWU64-limit1000_0.25syn-0.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.771±0.037 0.803±0.015 5 xps/167_aug_HWU64-limit1000_0.0syn-1.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.783±0.037 0.808±0.014 5 xps/168_aug_HWU64-limit1000_0.0syn-0.75shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.781±0.031 0.808±0.019 5 xps/169_aug_HWU64-limit1000_0.0syn-0.5shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.781±0.031 0.807±0.016 5 xps/170_aug_HWU64-limit1000_0.0syn-0.25shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.785±0.032 0.816±0.021 5 xps/171_aug_HWU64-limit1000_0.0syn-0.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.809±0.014 0.813±0.027 5 xps/172_aug_Liu-limit1000_1.0syn-1.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.811±0.018 0.809±0.029 5 xps/173_aug_Liu-limit1000_1.0syn-0.75shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.807±0.019 0.811±0.025 5 xps/174_aug_Liu-limit1000_1.0syn-0.5shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.805±0.021 0.812±0.019 5 xps/175_aug_Liu-limit1000_1.0syn-0.25shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.807±0.016 0.809±0.024 5 xps/176_aug_Liu-limit1000_1.0syn-0.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.810±0.019 0.808±0.027 5 xps/177_aug_Liu-limit1000_0.75syn-1.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.809±0.015 0.811±0.023 5 xps/178_aug_Liu-limit1000_0.75syn-0.75shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.804±0.017 0.815±0.022 5 xps/179_aug_Liu-limit1000_0.75syn-0.5shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.807±0.016 0.811±0.032 5 xps/180_aug_Liu-limit1000_0.75syn-0.25shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.808±0.021 0.806±0.019 5 xps/181_aug_Liu-limit1000_0.75syn-0.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.808±0.016 0.813±0.025 5 xps/182_aug_Liu-limit1000_0.5syn-1.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.809±0.016 0.810±0.023 5 xps/183_aug_Liu-limit1000_0.5syn-0.75shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.810±0.019 0.813±0.018 5 xps/184_aug_Liu-limit1000_0.5syn-0.5shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.807±0.017 0.811±0.020 5 xps/185_aug_Liu-limit1000_0.5syn-0.25shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.806±0.018 0.814±0.016 5 xps/186_aug_Liu-limit1000_0.5syn-0.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.805±0.013 0.812±0.024 5 xps/187_aug_Liu-limit1000_0.25syn-1.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.808±0.012 0.814±0.026 5 xps/188_aug_Liu-limit1000_0.25syn-0.75shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.809±0.016 0.812±0.023 5 xps/189_aug_Liu-limit1000_0.25syn-0.5shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.808±0.018 0.812±0.020 5 xps/190_aug_Liu-limit1000_0.25syn-0.25shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.802±0.015 0.807±0.023 5 xps/191_aug_Liu-limit1000_0.25syn-0.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.803±0.015 0.811±0.025 5 xps/192_aug_Liu-limit1000_0.0syn-1.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.804±0.016 0.809±0.025 5 xps/193_aug_Liu-limit1000_0.0syn-0.75shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.806±0.013 0.813±0.024 5 xps/194_aug_Liu-limit1000_0.0syn-0.5shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.802±0.018 0.805±0.020 5 xps/195_aug_Liu-limit1000_0.0syn-0.25shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.807±0.015 0.807±0.018 5 xps/196_aug_Liu-limit1000_0.0syn-0.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.961±0.009 0.943±0.004 5 xps/197_aug_OOS-limit1000_1.0syn-1.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.959±0.008 0.945±0.002 5 xps/198_aug_OOS-limit1000_1.0syn-0.75shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.963±0.007 0.949±0.005 5 xps/199_aug_OOS-limit1000_1.0syn-0.5shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.961±0.004 0.946±0.007 5 xps/200_aug_OOS-limit1000_1.0syn-0.25shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.958±0.009 0.944±0.005 5 xps/201_aug_OOS-limit1000_1.0syn-0.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.957±0.007 0.943±0.002 5 xps/202_aug_OOS-limit1000_0.75syn-1.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.959±0.004 0.943±0.012 5 xps/203_aug_OOS-limit1000_0.75syn-0.75shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.961±0.005 0.944±0.003 5 xps/204_aug_OOS-limit1000_0.75syn-0.5shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.962±0.005 0.951±0.004 5 xps/205_aug_OOS-limit1000_0.75syn-0.25shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.962±0.005 0.946±0.002 5 xps/206_aug_OOS-limit1000_0.75syn-0.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.959±0.009 0.943±0.006 5 xps/207_aug_OOS-limit1000_0.5syn-1.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.956±0.008 0.940±0.003 5 xps/208_aug_OOS-limit1000_0.5syn-0.75shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.962±0.006 0.944±0.004 5 xps/209_aug_OOS-limit1000_0.5syn-0.5shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.960±0.008 0.946±0.004 5 xps/210_aug_OOS-limit1000_0.5syn-0.25shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.961±0.004 0.948±0.003 5 xps/211_aug_OOS-limit1000_0.5syn-0.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.961±0.005 0.944±0.005 5 xps/212_aug_OOS-limit1000_0.25syn-1.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.962±0.005 0.946±0.004 5 xps/213_aug_OOS-limit1000_0.25syn-0.75shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.962±0.005 0.943±0.003 5 xps/214_aug_OOS-limit1000_0.25syn-0.5shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.960±0.009 0.945±0.002 5 xps/215_aug_OOS-limit1000_0.25syn-0.25shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.960±0.007 0.944±0.006 5 xps/216_aug_OOS-limit1000_0.25syn-0.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.955±0.009 0.943±0.006 5 xps/217_aug_OOS-limit1000_0.0syn-1.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.958±0.009 0.943±0.006 5 xps/218_aug_OOS-limit1000_0.0syn-0.75shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.960±0.005 0.945±0.006 5 xps/219_aug_OOS-limit1000_0.0syn-0.5shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.960±0.007 0.946±0.002 5 xps/220_aug_OOS-limit1000_0.0syn-0.25shuf_ckpt-65536/protaugment-k1-low/metrics.json
+0.960±0.003 0.945±0.004 5 xps/221_aug_OOS-limit1000_0.0syn-0.0shuf_ckpt-65536/protaugment-k1-low/metrics.json
+--- best test acc ---
+0.962±0.005 0.951±0.004 5 xps/205_aug_OOS-limit1000_0.75syn-0.25shuf_ckpt-65536/protaugment-k1-low/metrics.json
+--- best valid acc ---
+0.963±0.007 0.949±0.005 5 xps/199_aug_OOS-limit1000_1.0syn-0.5shuf_ckpt-65536/protaugment-k1-low/metrics.json

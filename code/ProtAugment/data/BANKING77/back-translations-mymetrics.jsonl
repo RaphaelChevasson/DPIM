@@ -1,0 +1,21 @@
+{
+ "bleus": [
+  53.14140122996164,
+  59.60374794512114,
+  55.82823744876725,
+  55.67968668729381,
+  54.72474087699517
+ ],
+ "bleu": 55.7955628376278,
+ "dist-2": 0.8821033620116057,
+ "dist-2_including_src": 0.8821045715752648,
+ "dist-2_lowercased": 0.8819913417299265,
+ "dist-2_including_src_lowercased": 0.8819925598552091,
+ "dist-3": 0.766774627641162,
+ "dist-3_including_src": 0.766776850505593,
+ "dist-3_lowercased": 0.7667611444898854,
+ "dist-3_including_src_lowercased": 0.7667633683848235,
+ "use_similarity": 0.9335586289423536,
+ "use_similarity_including_src": 0.9408420781100025,
+ "use_similarity_against_src": 0.9435773920562218
+}

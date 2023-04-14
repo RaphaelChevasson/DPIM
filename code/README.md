@@ -1,9 +1,3 @@
-# Code
-
-Coming soon! Code is being cleaned and tested against fresh windows and linux right now.
-
-`/!\` Sorry for the delay, we got hit pretty hard by COVID. Still comming soon `/!\`
-
 # Installation
 
 ```sh
