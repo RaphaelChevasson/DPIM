@@ -1,6 +1,6 @@
 # DPIM
 
-This repository host [code](./code), [samples and metrics](./results) for the [paper]() `Diverse Paraphrasing with Insertion Models for Few-Shot Intent Detection`. It proposes a pipeline for automatic and controllable paraphrase generation.
+This repository host [code](./code), [samples and metrics](./results) for the [paper](https://doi.org/10.1007/978-3-031-30047-9_6) `Diverse Paraphrasing with Insertion Models for Few-Shot Intent Detection`. It proposes a pipeline for automatic and controllable paraphrase generation.
 
 # License
 
@@ -10,12 +10,20 @@ Our code is licensed under dual [MIT](https://opensource.org/licenses/MIT) and [
 
 You can link to this repo or/and cite our paper:
 ```bib
-@article{Chevasson2022DPIM,
-  title={Diverse Paraphrasing with Insertion Models for Few-Shot Intent Detection},
-  author={Raphaël Chevasson and Charlotte Laclau and Christophe Gravier},
-  journal={ArXiv},
-  year={2022},
-  volume={COMMING SOON}
+@InProceedings{10.1007/978-3-031-30047-9_6,
+    author="Chevasson, Rapha{\"e}l
+    and Laclau, Charlotte
+    and Gravier, Christophe",
+    editor="Cr{\'e}milleux, Bruno
+    and Hess, Sibylle
+    and Nijssen, Siegfried",
+    title="Diverse Paraphrasing with Insertion Models for Few-Shot Intent Detection",
+    booktitle="Advances in Intelligent Data Analysis XXI",
+    year="2023",
+    publisher="Springer Nature Switzerland",
+    address="Cham",
+    pages="65--76",
+    isbn="978-3-031-30047-9"
 }
 ```
 
